@@ -4,6 +4,7 @@ import pickle
 import string
 from nltk.corpus import stopwords
 import nltk
+nltk.download('punkt')
 from nltk.stem.porter import PorterStemmer
 
 ps = PorterStemmer()
@@ -50,7 +51,7 @@ html_temp = """
             This model gives "97%" accuracy,
             sometime its gives false output as well.
 </p>
-<span>Author: @Anirudh</span>
+<span style="color: blue;">Author: @Anirudh</span>
 """
 st.markdown(html_temp,unsafe_allow_html=True)
 input_sms = st.text_area('Enter your message')
