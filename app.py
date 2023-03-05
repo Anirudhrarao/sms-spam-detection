@@ -2,6 +2,7 @@ import streamlit as st
 import sklearn
 import nltk
 nltk.download('punkt')
+nltk.download('stopwords')
 import pickle
 import string
 from nltk.corpus import stopwords
